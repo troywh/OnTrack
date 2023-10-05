@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "OnTrack! but w/ background now!",
+    "version": "1.0",
+    "description": "OnTrack! is a Chrome extension that tracks tab activity for productivity enforcement.",
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": ["content-script.js"]
+        }
+    ],
+    "background": {
+        "service_worker": "service-worker.js"
+    },
+    "action": {
+        "default_icon": "hello-kitty.png",
+        "default_popup": "popup.html",
+        "default_title": "Click me!"
+    },
+    "permissions": [
+        "tabGroups"
+      ]
+}
