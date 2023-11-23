@@ -12,7 +12,8 @@
         }
     ],
     "background": {
-        "service_worker": "service-worker.js"
+        "service_worker": "background.js",
+        "js": "content-script.js"
     },
     "action": {
         "default_icon": "hello-kitty.png",
@@ -20,6 +21,11 @@
         "default_title": "Click me!"
     },
     "permissions": [
-        "tabGroups"
-      ]
+        "storage",
+        "tabs",
+        "activeTab"
+      ],
+    "host_permissions": [
+        "<all_urls>"
+    ]
 }

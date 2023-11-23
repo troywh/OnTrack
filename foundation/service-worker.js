@@ -1,1 +1,0 @@
-console.log("hey look the service-worker working!");
